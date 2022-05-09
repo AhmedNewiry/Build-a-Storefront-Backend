@@ -1,0 +1,1 @@
+CREATE TABLE orders(id BIGSERIAL NOT NULL PRIMARY KEY,product_quantity int NOT NULL,order_status VARCHAR(10) NOT NULL, user_id BIGINT REFERENCES users(id) NOT NULL);
